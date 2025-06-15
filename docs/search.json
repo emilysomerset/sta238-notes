@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "STA238 Lecture Notes",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "text": "Welcome to the course notes for STA238.\nThese notes contain lecture content for the term, including worked examples, visualizations, and summaries of key concepts.\nUse the navigation on the left to access each lecture. You can also download the full notes as a PDF via the “Other formats” link.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>sta238-notes</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>STA238: Probability, Statistics and Data Analysis II</span>"
     ]
   },
   {
@@ -14,17 +14,17 @@
     "href": "lec01.html",
     "title": "2  Lecture 1: Probability Review",
     "section": "",
-    "text": "2.1 Definitions\nSome lecture content here…",
+    "text": "2.1 Sample Spaces and Events\nA sample space is the set of all possible outcomes of an experiment.\nAn event is a subset of the sample space.\nLet \\(S\\) be the sample space and \\(A \\subseteq S\\) be an event.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lecture 1: Probability Review</span>"
     ]
   },
   {
-    "objectID": "lec01.html#theorems",
-    "href": "lec01.html#theorems",
+    "objectID": "lec01.html#basic-probability-rules",
+    "href": "lec01.html#basic-probability-rules",
     "title": "2  Lecture 1: Probability Review",
-    "section": "2.2 Theorems",
-    "text": "2.2 Theorems\nMore content…",
+    "section": "2.2 Basic Probability Rules",
+    "text": "2.2 Basic Probability Rules\n\n\\(P(S) = 1\\)\n\\(P(A) \\geq 0\\)\nIf \\(A \\cap B = \\emptyset\\) , then \\(P(A \\cup B) = P(A) + P(B)\\)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lecture 1: Probability Review</span>"
     ]
@@ -32,21 +32,21 @@
   {
     "objectID": "lec02.html",
     "href": "lec02.html",
-    "title": "3  Lecture 2: Inference",
+    "title": "3  Lecture 2: Conditional Probability and Bayes’ Rule",
     "section": "",
-    "text": "3.1 Definitions\nSome lecture content here…",
+    "text": "3.1 Conditional Probability\nThe probability of ( A ) given ( B ) is:\n\\[\nP(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\n\\]",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lecture 2: Inference</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lecture 2: Conditional Probability and Bayes' Rule</span>"
     ]
   },
   {
-    "objectID": "lec02.html#theorems",
-    "href": "lec02.html#theorems",
-    "title": "3  Lecture 2: Inference",
-    "section": "3.2 Theorems",
-    "text": "3.2 Theorems\nMore content…",
+    "objectID": "lec02.html#bayes-rule",
+    "href": "lec02.html#bayes-rule",
+    "title": "3  Lecture 2: Conditional Probability and Bayes’ Rule",
+    "section": "3.2 Bayes’ Rule",
+    "text": "3.2 Bayes’ Rule\n\\[ P(B_j \\mid A) = \\frac{P(A \\mid B_j) P(B_j)}{\\sum_k P(A \\mid B_k) P(B_k)} \\]\nThis allows us to reverse conditional probabilities based on known likelihoods and priors.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lecture 2: Inference</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lecture 2: Conditional Probability and Bayes' Rule</span>"
     ]
   }
 ]

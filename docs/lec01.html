@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -109,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">sta238-notes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">STA238: Probability, Statistics and Data Analysis II</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -121,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lec02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lecture 2: Inference</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lecture 2: Conditional Probability and Bayes’ Rule</span></span></a>
   </div>
 </li>
     </ul>
@@ -134,8 +163,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#definitions" id="toc-definitions" class="nav-link active" data-scroll-target="#definitions"><span class="header-section-number">2.1</span> Definitions</a></li>
-  <li><a href="#theorems" id="toc-theorems" class="nav-link" data-scroll-target="#theorems"><span class="header-section-number">2.2</span> Theorems</a></li>
+  <li><a href="#sample-spaces-and-events" id="toc-sample-spaces-and-events" class="nav-link active" data-scroll-target="#sample-spaces-and-events"><span class="header-section-number">2.1</span> Sample Spaces and Events</a></li>
+  <li><a href="#basic-probability-rules" id="toc-basic-probability-rules" class="nav-link" data-scroll-target="#basic-probability-rules"><span class="header-section-number">2.2</span> Basic Probability Rules</a></li>
   </ul>
 </nav>
     </div>
@@ -161,14 +190,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="definitions" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="definitions"><span class="header-section-number">2.1</span> Definitions</h2>
-<p>Some lecture content here…</p>
+<section id="sample-spaces-and-events" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sample-spaces-and-events"><span class="header-section-number">2.1</span> Sample Spaces and Events</h2>
+<p>A <strong>sample space</strong> is the set of all possible outcomes of an experiment.<br>
+An <strong>event</strong> is a subset of the sample space.</p>
+<p>Let <span class="math inline">\(S\)</span> be the sample space and <span class="math inline">\(A \subseteq S\)</span> be an event.</p>
 </section>
-<section id="theorems" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="theorems"><span class="header-section-number">2.2</span> Theorems</h2>
-<p>More content…</p>
-<hr>
+<section id="basic-probability-rules" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="basic-probability-rules"><span class="header-section-number">2.2</span> Basic Probability Rules</h2>
+<ul>
+<li><span class="math inline">\(P(S) = 1\)</span></li>
+<li><span class="math inline">\(P(A) \geq 0\)</span></li>
+<li>If <span class="math inline">\(A \cap B = \emptyset\)</span> , then <span class="math inline">\(P(A \cup B) = P(A) + P(B)\)</span></li>
+</ul>
 
 
 </section>
@@ -596,13 +630,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="sta238-notes">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">sta238-notes</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="STA238: Probability, Statistics and Data Analysis II">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">STA238: Probability, Statistics and Data Analysis II</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./lec02.html" class="pagination-link" aria-label="Lecture 2: Inference">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lecture 2: Inference</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./lec02.html" class="pagination-link" aria-label="Lecture 2: Conditional Probability and Bayes' Rule">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Lecture 2: Conditional Probability and Bayes’ Rule</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

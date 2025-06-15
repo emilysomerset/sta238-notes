@@ -5,13 +5,15 @@ format:
   pdf: default
 ---
 
-## Definitions
+## Sample Spaces and Events
 
-Some lecture content here...
+A **sample space** is the set of all possible outcomes of an experiment.\
+An **event** is a subset of the sample space.
 
-## Theorems
+Let $S$ be the sample space and $A \subseteq S$ be an event.
 
-More content...
+## Basic Probability Rules
 
----
-
+-   $P(S) = 1$
+-   $P(A) \geq 0$
+-   If $A \cap B = \emptyset$ , then $P(A \cup B) = P(A) + P(B)$

@@ -1,17 +1,20 @@
 ---
-title: "Lecture 2: Inference"
+title: "Lecture 2: Conditional Probability and Bayes' Rule"
 format:
   html: default
   pdf: default
 ---
 
-## Definitions
+## Conditional Probability
 
-Some lecture content here...
+The probability of ( A ) given ( B ) is:
 
-## Theorems
+$$
+P(A \mid B) = \frac{P(A \cap B)}{P(B)} 
+$$
 
-More content...
+## Bayes' Rule
 
----
+$$ P(B_j \mid A) = \frac{P(A \mid B_j) P(B_j)}{\sum_k P(A \mid B_k) P(B_k)} $$
 
+This allows us to reverse conditional probabilities based on known likelihoods and priors.

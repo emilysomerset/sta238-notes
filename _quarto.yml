@@ -4,6 +4,7 @@ project:
 
 book:
   title: "STA238 Lecture Notes"
+  author: "Emily Somerset"
   chapters:
     - index.qmd
     - lec01.qmd
@@ -11,9 +12,10 @@ book:
 
 format:
   html:
+    theme: cosmo
     toc: true
     number-sections: true
   pdf:
     toc: true
     number-sections: true
-    output-file: sta238-Winter2026-notes.pdf
+    output-file: sta238-notes.pdf
