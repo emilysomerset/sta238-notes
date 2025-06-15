@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "lec02.html",
+    "href": "lec02.html",
+    "title": "Lecture 2: Inference",
+    "section": "",
+    "text": "Some lecture content here…"
+  },
+  {
+    "objectID": "lec02.html#definitions",
+    "href": "lec02.html#definitions",
+    "title": "Lecture 2: Inference",
+    "section": "",
+    "text": "Some lecture content here…"
+  },
+  {
+    "objectID": "lec02.html#theorems",
+    "href": "lec02.html#theorems",
+    "title": "Lecture 2: Inference",
+    "section": "2 Theorems",
+    "text": "2 Theorems\nMore content…\n\nDownload PDF version"
+  },
+  {
+    "objectID": "lec01.html",
+    "href": "lec01.html",
+    "title": "Lecture 1: Probability Review",
+    "section": "",
+    "text": "Some lecture content here…"
+  },
+  {
+    "objectID": "lec01.html#definitions",
+    "href": "lec01.html#definitions",
+    "title": "Lecture 1: Probability Review",
+    "section": "",
+    "text": "Some lecture content here…"
+  },
+  {
+    "objectID": "lec01.html#theorems",
+    "href": "lec01.html#theorems",
+    "title": "Lecture 1: Probability Review",
+    "section": "2 Theorems",
+    "text": "2 Theorems\nMore content…\n\nDownload PDF version"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "sta238-notes",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  }
+]
