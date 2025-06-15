@@ -3,18 +3,21 @@ project:
   output-dir: docs
 
 website:
-  title: "sta238-notes"
+  title: "STA238 Lecture Notes"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: lec01.qmd
+        text: Lecture 1
+      - href: lec02.qmd
+        text: Lecture 2
 
 format:
   html:
     theme: cosmo
-    css: styles.css
     toc: true
-
-editor: visual
-
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true

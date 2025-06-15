@@ -1,0 +1,18 @@
+---
+title: "Lecture 2: Inference"
+format:
+  html: default
+  pdf: default
+---
+
+## Definitions
+
+Some lecture content here...
+
+## Theorems
+
+More content...
+
+---
+
+[Download PDF version](lec02.pdf){.btn .btn-primary}
