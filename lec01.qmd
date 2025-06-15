@@ -15,4 +15,3 @@ More content...
 
 ---
 
-[Download PDF version](lec01.pdf){.btn .btn-primary}
