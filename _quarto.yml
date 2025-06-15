@@ -9,13 +9,28 @@ book:
     - index.qmd
     - lec01.qmd
     - lec02.qmd
+  site-url: https://emilysomerset.github.io/sta238-notes/
+  repo-url: https://github.com/emilysomerset/sta238-notes
+  repo-branch: main
+  search: true
+  downloads: [pdf]
+  page-footer: "Copyright 2026, Emily Somerset" 
 
 format:
   html:
     theme: cosmo
     toc: true
     number-sections: true
-    pdf: true    # <- add this line to enable PDF generation with HTML
+    reader-mode: true
+    fig-align: center
+    toc-location: right
+    code-fold: false
+    code-summary: "Code"
+    code-overflow: wrap
+    code-block-border-left: true
+    code-copy: true
+    engine: knitr
+    default-image-extension: png
   pdf:
     toc: true
     number-sections: true
