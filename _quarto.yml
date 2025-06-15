@@ -15,6 +15,7 @@ format:
     theme: cosmo
     toc: true
     number-sections: true
+    pdf: true    # <- add this line to enable PDF generation with HTML
   pdf:
     toc: true
     number-sections: true
